@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_03_064717) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_03_224222) do
   create_table "events", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.date "date"
     t.string "location"
     t.string "event_type"
     t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "address"
+    t.boolean "verified"
+    t.boolean "minted"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
