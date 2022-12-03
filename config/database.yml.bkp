@@ -25,9 +25,9 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: admin_api_test
+# test:
+#   <<: *default
+#   database: admin_api_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -48,9 +48,9 @@ test:
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
-#
-production:
-  <<: *default
-  database: admin_api_production
-  username: admin_api
-  password: <%= ENV["ADMIN_API_DATABASE_PASSWORD"] %>
+# #
+# production:
+#   <<: *default
+#   database: admin_api_production
+#   username: admin_api
+#   password: <%= ENV["ADMIN_API_DATABASE_PASSWORD"] %>
